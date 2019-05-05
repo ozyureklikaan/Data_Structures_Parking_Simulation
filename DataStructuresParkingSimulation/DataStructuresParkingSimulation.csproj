@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Araba.cs" />
+    <Compile Include="Car.cs" />
     <Compile Include="FormParking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,7 +58,7 @@
     <Compile Include="LinkedList.cs" />
     <Compile Include="LinkedListADT.cs" />
     <Compile Include="Node.cs" />
-    <Compile Include="Otopark.cs" />
+    <Compile Include="Parking.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queue.cs" />

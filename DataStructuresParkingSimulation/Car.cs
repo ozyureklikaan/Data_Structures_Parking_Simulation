@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DataStructuresParkingSimulation
 {
-    public class Araba
+    public class Car
     {
-        public int Numara { get; set; }
-        public string Renk { get; set; }
-        public string BulunduguKat { get; set; }
+        public int Number { get; set; }
+        public string Color { get; set; }
+        public string AvailableFloor { get; set; }
     }
 }

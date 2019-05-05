@@ -8,9 +8,9 @@ namespace DataStructuresParkingSimulation
 {
     public class LinkedList : LinkedListADT
     {
-        public override void InsertFirst(object araba)
+        public override void InsertFirst(object car)
         {
-            Node tmpHead = new Node { Data = araba };
+            Node tmpHead = new Node { Data = car };
             if (Head == null)
             {
                 Head = tmpHead;
@@ -23,16 +23,16 @@ namespace DataStructuresParkingSimulation
             Size++;
         }
 
-        public override void InsertLast(object araba)
+        public override void InsertLast(object car)
         {
             Node oldLast = Head;
             if (Head == null)
             {
-                InsertFirst(araba);
+                InsertFirst(car);
             }
             else
             {
-                Node newLast = new Node { Data = araba };
+                Node newLast = new Node { Data = car };
                 while (oldLast != null)
                 {
                     if (oldLast.Next != null)
@@ -49,7 +49,7 @@ namespace DataStructuresParkingSimulation
             }
         }
 
-        public override void InsertPos(int position, object araba)
+        public override void InsertPos(int position, object car)
         {
             throw new NotImplementedException();
         }
@@ -125,14 +125,14 @@ namespace DataStructuresParkingSimulation
 
         public override string DisplayElements()
         {
-            string strListe = "" + Environment.NewLine + "     2. Kattaki Arabalar :" + Environment.NewLine;
+            string strList = "" + Environment.NewLine + "     Cars on the 2nd floor :" + Environment.NewLine;
             Node item = Head;
             while (item != null)
             {
-                strListe += "" + ((Araba)item.Data).Numara + " Numaralı Arabanın --> Rengi : " + ((Araba)item.Data).Renk + ", Bulunduğu Kat : " + ((Araba)item.Data).BulunduguKat + Environment.NewLine;
+                strList += "" + " Number" + ((Car)item.Data).Number + " car --> Color" + ((Car)item.Data).Color + ", Available Floor : " + ((Car)item.Data).AvailableFloor + Environment.NewLine;
                 item = item.Next;
             }
-            return strListe;
+            return strList;
         }
     }
 }

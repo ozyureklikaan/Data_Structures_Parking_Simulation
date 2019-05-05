@@ -20,7 +20,7 @@ namespace DataStructuresParkingSimulation
         {
             if (stack.Length == Top + 1)
             {
-                throw new Exception("Stack Dolu (Overflow)");
+                throw new Exception("Stack Full (Overflow)");
             }
             stack[++Top] = item;
         }
@@ -29,14 +29,12 @@ namespace DataStructuresParkingSimulation
         {
             if (IsEmpty())
             {
-                throw new Exception("Stack Boş (Downflow)");
+                throw new Exception("Stack Empty (Downflow)");
             }
-            object silinenAraba = stack[Top];
-            //
+            object deletedCar = stack[Top];
             stack[Top] = null;
             Top--;
-            //
-            return silinenAraba;
+            return deletedCar;
         }
 
         public object Peek()

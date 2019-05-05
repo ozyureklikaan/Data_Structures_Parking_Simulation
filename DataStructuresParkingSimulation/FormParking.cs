@@ -17,111 +17,111 @@ namespace DataStructuresParkingSimulation
             InitializeComponent();
         }
 
-        Otopark otopark = new Otopark();
-        int otoparkDurumu; //2 otoparktaki araçların çıkış kuyruğuna eklendiğini, 1 otoparkın dolu olduğunu, 0 ise otoparkın boş olduğunu gösterir
+        Parking parking = new Parking();
+        int parkingSituation; //2 otoparktaki araçların çıkış kuyruğuna eklendiğini, 1 otoparkın dolu olduğunu, 0 ise otoparkın boş olduğunu gösterir
 
         private void FormParking_Load(object sender, EventArgs e)
         {
-            btnListele.Visible = false;
-            btnCikisKuyrukEkle.Visible = false;
+            btnList.Visible = false;
+            btnAddToExitQueue.Visible = false;
             label2.Visible = false;
-            checkBoxListele.Visible = false;
-            checkBoxSil.Visible = false;
-            btnCikisKuyrukListele.Visible = false;
-            btnCikisKuyrukCikar.Visible = false;
+            checkBoxList.Visible = false;
+            checkBoxDelete.Visible = false;
+            btnListToExitQueue.Visible = false;
+            btnExitAll.Visible = false;
         }
 
-        private void BtnArabalarıEkle_Click(object sender, EventArgs e)
+        private void BtnAddCar_Click(object sender, EventArgs e)
         {
-            btnListele.Visible = true;
-            btnCikisKuyrukEkle.Visible = true;
+            btnList.Visible = true;
+            btnAddToExitQueue.Visible = true;
 
-            MessageBox.Show(otopark.OtoparkArabaEkle());
+            MessageBox.Show(parking.AddACarToTheParking());
 
-            btnArabalarıEkle.Enabled = false;
-            otoparkDurumu = 1;
+            btnAddCar.Enabled = false;
+            parkingSituation = 1;
         }
 
-        private void BtnListele_Click(object sender, EventArgs e)
+        private void BtnList_Click(object sender, EventArgs e)
         {
-            if (otoparkDurumu == 1)
+            if (parkingSituation == 1)
             {
-                MessageBox.Show(otopark.ArabaListeleme());
+                MessageBox.Show(parking.CarListing());
             }
-            else if (otoparkDurumu == 2)
+            else if (parkingSituation == 2)
             {
-                MessageBox.Show("Otoparktaki Araçlar Çıkış Kuyruğuna Eklenmiştir");
+                MessageBox.Show("Vehicles in parking lot added to outlet queue.");
             }
             else
             {
-                MessageBox.Show("Otopark Boş");
+                MessageBox.Show("Parking empty.");
             }
         }
 
-        private void BtnCikisKuyrukEkle_Click(object sender, EventArgs e)
+        private void BtnAddToExitQueue_Click(object sender, EventArgs e)
         {
             label2.Visible = true;
-            checkBoxListele.Visible = true;
-            checkBoxSil.Visible = true;
+            checkBoxList.Visible = true;
+            checkBoxDelete.Visible = true;
 
-            MessageBox.Show(otopark.OtoparktanCikis());
+            MessageBox.Show(parking.ExitFromTheParking());
 
-            btnCikisKuyrukEkle.Enabled = false;
-            otoparkDurumu = 2;
+            btnAddToExitQueue.Enabled = false;
+            parkingSituation = 2;
         }
 
-        private void CheckBoxListele_CheckedChanged(object sender, EventArgs e)
+        private void CheckBoxList_CheckedChanged_1(object sender, EventArgs e)
         {
-            if (otoparkDurumu == 2)
+            if (parkingSituation == 2)
             {
-                if (checkBoxListele.Checked == true)
+                if (checkBoxList.Checked == true)
                 {
-                    checkBoxSil.Enabled = false;
-                    btnCikisKuyrukListele.Visible = true;
+                    checkBoxDelete.Enabled = false;
+                    btnListToExitQueue.Visible = true;
                 }
                 else
                 {
-                    checkBoxSil.Enabled = true;
-                    btnCikisKuyrukListele.Visible = false;
+                    checkBoxDelete.Enabled = true;
+                    btnListToExitQueue.Visible = false;
                 }
             }
             else
             {
-                MessageBox.Show("Arabalar Otoparktan Çıkarılmıştır. Otopark Boşaltılmadan Tekrar Deneyiniz.");
+                MessageBox.Show("Parking is empty. Please try again when parking is full.");
             }
         }
 
-        private void CheckBoxSil_CheckedChanged(object sender, EventArgs e)
+        private void CheckBoxDelete_CheckedChanged_1(object sender, EventArgs e)
         {
-            if (checkBoxSil.Checked == true)
+            if (checkBoxDelete.Checked == true)
             {
-                checkBoxListele.Enabled = false;
-                btnCikisKuyrukCikar.Visible = true;
+                checkBoxList.Enabled = false;
+                btnExitAll.Visible = true;
             }
             else
             {
-                checkBoxListele.Enabled = true;
-                btnCikisKuyrukCikar.Visible = false;
+                checkBoxList.Enabled = true;
+                btnExitAll.Visible = false;
             }
         }
 
-        private void BtnCikisKuyrukListele_Click(object sender, EventArgs e)
+        private void BtnListToExitQueue_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(otopark.QueueArabaListele());
+            MessageBox.Show(parking.QueueListingTheCar());
         }
 
-        private void BtnCikisKuyrukCikar_Click(object sender, EventArgs e)
+        private void BtnExitAll_Click(object sender, EventArgs e)
         {
-            if (otoparkDurumu == 0)
+            if (parkingSituation == 0)
             {
-                MessageBox.Show("Otopark Zaten Boş");
+                MessageBox.Show("Park is already empty.");
             }
             else
             {
-                MessageBox.Show(otopark.QueueArabaÇıkarma());
+                MessageBox.Show(parking.TakeTheCarOutOfTheQueue());
             }
 
-            otoparkDurumu = 0;
+            parkingSituation = 0;
         }
     }
 }

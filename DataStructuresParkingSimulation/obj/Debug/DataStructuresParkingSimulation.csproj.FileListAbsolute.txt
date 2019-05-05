@@ -8,3 +8,23 @@ C:\Users\ozyur\Desktop\DataStructuresParkingSimulation\DataStructuresParkingSimu
 C:\Users\ozyur\Desktop\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.csproj.CoreCompileInputs.cache
 C:\Users\ozyur\Desktop\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.exe
 C:\Users\ozyur\Desktop\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.pdb
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\DataStructuresParkingSimulation\DataStructuresParkingSimulation\bin\Debug\DataStructuresParkingSimulation.exe.config
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\DataStructuresParkingSimulation\DataStructuresParkingSimulation\bin\Debug\DataStructuresParkingSimulation.exe
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\DataStructuresParkingSimulation\DataStructuresParkingSimulation\bin\Debug\DataStructuresParkingSimulation.pdb
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.csprojAssemblyReference.cache
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.FormParking.resources
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.Properties.Resources.resources
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.csproj.GenerateResource.cache
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.csproj.CoreCompileInputs.cache
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.exe
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.pdb
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\İngilizce Versiyonlar\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.csprojAssemblyReference.cache
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\İngilizce Versiyonlar\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.FormParking.resources
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\İngilizce Versiyonlar\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.Properties.Resources.resources
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\İngilizce Versiyonlar\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.csproj.GenerateResource.cache
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\İngilizce Versiyonlar\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.csproj.CoreCompileInputs.cache
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\İngilizce Versiyonlar\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.exe
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\İngilizce Versiyonlar\DataStructuresParkingSimulation\DataStructuresParkingSimulation\obj\Debug\DataStructuresParkingSimulation.pdb
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\İngilizce Versiyonlar\DataStructuresParkingSimulation\DataStructuresParkingSimulation\bin\Debug\DataStructuresParkingSimulation.exe.config
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\İngilizce Versiyonlar\DataStructuresParkingSimulation\DataStructuresParkingSimulation\bin\Debug\DataStructuresParkingSimulation.exe
+D:\Projects\Project\C#\Windows Forms Application (.NET Freamwork)\GitHub\İngilizce Versiyonlar\DataStructuresParkingSimulation\DataStructuresParkingSimulation\bin\Debug\DataStructuresParkingSimulation.pdb

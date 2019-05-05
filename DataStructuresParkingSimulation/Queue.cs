@@ -8,29 +8,29 @@ namespace DataStructuresParkingSimulation
 {
     public class Queue : IQueue
     {
-        private object[] Kuyruk;
+        private object[] queue;
         private int front = -1;
         private int rear = -1;
         private int size = 0;
         private int count = 0;
 
-        public Queue(int arabaSayisi)
+        public Queue(int theNumberOfCars)
         {
-            this.size = arabaSayisi;
-            Kuyruk = new object[size];
+            this.size = theNumberOfCars;
+            queue = new object[size];
         }
 
-        public void Insert(object araba)
+        public void Insert(object car)
         {
             if ((count == size) || (rear == (size - 1)))
             {
-                throw new Exception("Otopark Dolu");
+                throw new Exception("Parking full");
             }
             if (front == -1)
             {
                 front = 0;
             }
-            Kuyruk[++rear] = araba;
+            queue[++rear] = car;
             count++;
         }
 
@@ -40,16 +40,16 @@ namespace DataStructuresParkingSimulation
             {
                 throw new Exception("Queue is empty...");
             }
-            object silinenAraba = Kuyruk[front];
-            Kuyruk[front] = null;
+            object deletedCar = queue[front];
+            queue[front] = null;
             front++;
             count--;
-            return silinenAraba;
+            return deletedCar;
         }
 
         public object[] Peek()
         {
-            return Kuyruk;
+            return queue;
         }
 
         public bool IsEmpty()

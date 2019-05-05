@@ -10,9 +10,9 @@ namespace DataStructuresParkingSimulation
     {
         public Node Head;
         public int Size = 0;
-        public abstract void InsertFirst(object o);
-        public abstract void InsertLast(object o);
-        public abstract void InsertPos(int position, object o);
+        public abstract void InsertFirst(object car);
+        public abstract void InsertLast(object car);
+        public abstract void InsertPos(int position, object car);
         public abstract void DeleteFirst();
         public abstract void DeleteLast();
         public abstract void DeletePos(int position);
